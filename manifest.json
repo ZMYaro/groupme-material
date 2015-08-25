@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Material Design for GroupMe",
+	"version": "1.0",
+	"description": "Change the GroupMe web app interface to a Material Design visual style.",
+	
+	"permissions": [
+		"*://app.groupme.com/*"
+	],
+	
+	"content_scripts": [{
+		"matches": [
+			"*://app.groupme.com/*"
+		],
+		"css": [
+			"styles/main.css",
+			"styles/forms.css",
+			"styles/sidebar.css"
+		]
+	}]
+}

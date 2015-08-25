@@ -1,0 +1,104 @@
+/* The sidebar itself */
+#tray {
+	background-color: white !important;
+	color: black !important;
+	box-shadow: rgba(0, 0, 0, 0.26) 0 2px 5px 0, rgba(0, 0, 0, 0.16) 0 2px 10px 0 !important;
+}
+
+/* Search */
+#tray .actions {
+	background-color: transparent !important;
+	border-bottom-color: transparent !important;
+}
+#tray #tray-search {
+	background-color: transparent !important;
+}
+	#tray .actions input.search {
+		color: black !important;
+	}
+
+/* New group button */
+#tray .icon-plus {
+	font-size: 24px !important;
+	color: rgba(0,0,0,0.8) !important;
+	
+	width: 32px !important;
+	height: 32px !important;
+	padding: 3px 9px !important;
+	margin: -3px -5px !important;
+	border-radius: 50% !important;
+	
+	background-color: transparent !important;
+}
+	#tray .icon-plus::before {
+		content: '+' !important;
+	}
+	#tray .icon-plus:hover,
+	#tray .icon-plus:focus {
+		background-color: rgba(0,0,0,0.07) !important;
+	}
+	#tray .icon-plus:active {
+		background-color: rgba(0,0,0,0.13) !important;
+	}
+
+/* Tabs */
+#tray .tabs {
+	bottom: auto !important;
+	top: 40px !important;
+	background-color: transparent !important;
+	box-shadow: rgba(0, 0, 0, 0.26) 0 1px 2px 0, rgba(0, 0, 0, 0.16) 0 1px 5px 0 !important;
+}
+	#tray .tabs .tab img {
+		-webkit-filter: brightness(0) !important;
+	}
+	#tray .tabs .tab.active {
+		background-color: transparent !important;
+		position: relative !important;
+	}
+		#tray .tabs .tab.active::after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 3px;
+			background-color: #00aff0;
+		}
+		#tray .tabs .tab.active img {
+			-webkit-filter: sepia() hue-rotate(179deg) saturate(850) brightness(0.9) !important;
+		}
+
+/* Lists */
+#tray .chats.list,
+/*#tray .search-results,*/
+#tray .contacts.list {
+	top: 84px !important;
+}
+
+/* Chat item */
+#tray .chat:hover,
+#tray .chat:focus,
+#tray .chat.selected {
+		background-color: rgba(0,0,0,0.07) !important;
+}
+#tray .chat:active {
+	background-color: rgba(0,0,0,0.13) !important;
+}
+
+/* Chat details */
+#tray .chat .details {
+	text-shadow: none !important;
+}
+/* Chat name */
+#tray .chat .details .name {
+	color: black !important;
+}
+/* Chat snippet */
+#tray .chat .details .preview {
+	
+}
+/* Direct message icon */
+#tray .chat img.dm_icon {
+	-webkit-filter: brightness(0.5);
+}
